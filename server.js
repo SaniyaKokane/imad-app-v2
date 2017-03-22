@@ -8,7 +8,7 @@ var config = {
   database: 'saniyakokane',
   host: 'db.imad.hasura-app.io',
   port:'5432',
-   password:'db-saniyakokane-66330'
+  password: process.env.DB_PASSWORD
 };
 var app = express();
 app.use(morgan('combined'));
